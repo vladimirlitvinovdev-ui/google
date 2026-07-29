@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*HEADER*/
+.header {
+    height: 120px;
+    display: grid;
+    padding-top: 16px;
+}
+
+.header__top-wrapper {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 4px 44px 0 24px;
+    font-size: 14px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.logo__icon {
+    width: 92px;
+    height: 30px;
+    fill: deepskyblue;
+}
+
+.search-form__wrapper {
+    border-radius: 26px;
+    height: 50px;
+    border: 1px solid darkgrey;
+    box-shadow: 0 3px 10px 0 rgba(31, 31, 31, 0.08);
+}
+
+.search-form {
+    display: flex;
+    flex: 3;
+    align-items: center;
+}
+
+.search-form__input {
+    width: 658px;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    border-radius: 26px;
+    outline: none;
+    padding-left: 30px;
+}
+
+.clear {
+    width: 24px;
+    height: 50px;
+    border-right: 1px solid darkgray;
+    position: relative;
+}
+
+.clear::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 30px;
+    background: #dadce0;
+    margin-right: -12px;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.search-form__actions {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.search__button {
+    width: 24px;
+    height: 50px;
+    border: 0;
+    background: transparent;
+    color: #474747;
+    /*border: none;*/
+    /*background-color: transparent;*/
+}
+
+.search-button-last {
+    margin-right: 13px;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+
+.header-actions > :last-child {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.header-actions__button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+}
+
+.header-actions__icon {
+    color: #71717171;
+}
+
+.header-actions__avatar {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navigation__list {
+    display: flex;
+}
