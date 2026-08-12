@@ -235,6 +235,10 @@ li {
 
 .nav__item--dropdown:hover .dropdown {
     opacity: 1;
-    visibility: visible;
+     visibility: visible;
     transform: translateY(0);
 }
+
+/*SEARCH-PAGE*/
+
+
