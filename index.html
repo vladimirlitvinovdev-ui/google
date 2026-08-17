@@ -165,16 +165,25 @@
 
 <main class="search-page">
 	<div class="search-content">
-		<section class="search-result">
+		<section class="search-result search-result--main">
 			<div class="result-header">
-				<img src="image/search-page/google.png" alt="">
+				<span class="result-icon-wrapper">
+					<img class="result-icon" src="image/search-page/google.png" alt="">
+				</span>
 
 				<div class="result-site">
 					<div class="site-name">Google</div>
 					<div class="site-url">https://www.google.com</div>
 				</div>
 
-				<button class="result-menu">⋮</button>
+				<svg focusable="false"
+				     class="result-menu"
+				     aria-hidden="true"
+				     xmlns="http://www.w3.org/2000/svg"
+				     viewBox="0 0 24 24">
+					<path
+						d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+				</svg>
 			</div>
 
 			<a class="result-title" href="#">Google</a>
@@ -184,28 +193,76 @@
 			</p>
 
 			<div class="sitelinks">
-				<a class="sitelink" href="">
-					<span class="sitelink-title">Google Fonts</span>
-					<span class="sitelink-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.</span>
-				</a>
-				<a class="sitelink" href="">
-					<span class="sitelink-title">Page Ruler</span>
-					<span class="sitelink-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.</span>
-				</a>
-				<a class="sitelink" href="">
-					<span class="sitelink-title">Google Accounts</span>
-					<span class="sitelink-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.</span>
-				</a>
+				<div class="sitelink__wrapper">
+					<a class="sitelink" href="">
+						<span class="sitelink-title">Google Fonts</span>
+						<span class="sitelink-description">Loading. Sign in. Use your Google Account. Email or phone. Forgot ...</span>
+					</a>
+					<svg class="sitelink__icon"
+					     focusable="false"
+					     xmlns="http://www.w3.org/2000/svg"
+					     viewBox="0 0 24 24">
+						<path fill="%235e5e5e" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+					</svg>
+				</div>
 
-				<a class="sitelink" href="">
-					<span class="sitelink-title">Account</span>
-					<span class="sitelink-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.</span>
-				</a>
+				<div class="sitelink__wrapper">
+					<a class="sitelink" href="">
+						<span class="sitelink-title">Page Ruler</span>
+						<span class="sitelink-description">Sign in to your Google Account and learn how to set up security ...</span>
+					</a>
+					<svg class="sitelink__icon"
+					     focusable="false"
+					     xmlns="http://www.w3.org/2000/svg"
+					     viewBox="0 0 24 24">
+						<path fill="%235e5e5e" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+					</svg>
+				</div>
 
-				<a class="sitelink" href="">
-					<span class="sitelink-title">Search</span>
-					<span class="sitelink-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.</span>
-				</a>
+				<div class="sitelink__wrapper">
+					<a class="sitelink" href="">
+						<span class="sitelink-title">Google Accounts</span>
+						<span class="sitelink-description">Meet your business challenges head on with AI and cloud ...</span>
+					</a>
+					<svg class="sitelink__icon"
+					     focusable="false"
+					     xmlns="http://www.w3.org/2000/svg"
+					     viewBox="0 0 24 24">
+						<path fill="%235e5e5e" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+					</svg>
+				</div>
+
+				<div class="sitelink__wrapper">
+					<a class="sitelink" href="">
+						<span class="sitelink-title">Account</span>
+						<span class="sitelink-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quas.</span>
+					</a>
+					<svg class="sitelink__icon"
+					     focusable="false"
+					     xmlns="http://www.w3.org/2000/svg"
+					     viewBox="0 0 24 24">
+						<path fill="%235e5e5e" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+					</svg>
+				</div>
+
+				<div class="sitelink__wrapper">
+					<a class="sitelink" href="">
+						<span class="sitelink-title">Search</span>
+						<span class="sitelink-description">Gmail is email that's intuitive, efficient, and useful. 15 GB of ...</span>
+					</a>
+					<svg class="sitelink__icon"
+					     focusable="false"
+					     xmlns="http://www.w3.org/2000/svg"
+					     viewBox="0 0 24 24">
+						<path fill="%235e5e5e" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+					</svg>
+				</div>
+
+				<div class="sitelink__wrapper">
+					<a class="sitelink" href="">
+						<span class="sitelink-description">More results from Google.com »</span>
+					</a>
+				</div>
 			</div>
 		</section>
 		<section class="people-saying">
@@ -276,14 +333,22 @@
 		</section>
 		<section class="search-result">
 			<div class="result-header">
-				<img src="image/search-page/google.png" alt="">
-
+					<span class="result-icon-wrapper">
+				<img class="result-icon" src="image/search-page/google.png" alt="">
+					</span>
 				<div class="result-site">
 					<div class="site-name">Wikipedia</div>
 					<div class="site-url">https://en.wikipedia.org/wiki/Google</div>
 				</div>
 
-				<button class="result-menu">⋮</button>
+				<svg focusable="false"
+				     class="result-menu"
+				     aria-hidden="true"
+				     xmlns="http://www.w3.org/2000/svg"
+				     viewBox="0 0 24 24">
+					<path
+						d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+				</svg>
 			</div>
 
 			<a class="result-title" href="#">Google</a>
@@ -294,16 +359,22 @@
 		</section>
 		<section class="search-result">
 			<div class="result-header">
-				<img src="image/search-page/google.png" alt="">
-				LinkedIn · Google
-
-
+					<span class="result-icon-wrapper">
+				<img class="result-icon" src="image/search-page/google.png" alt="">
+					</span>
 				<div class="result-site">
 					<div class="site-name">LinkedIn · Google</div>
 					<div class="site-url">42,3M+ followers</div>
 				</div>
 
-				<button class="result-menu">⋮</button>
+				<svg focusable="false"
+				     class="result-menu"
+				     aria-hidden="true"
+				     xmlns="http://www.w3.org/2000/svg"
+				     viewBox="0 0 24 24">
+					<path
+						d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+				</svg>
 			</div>
 
 			<a class="result-title" href="#">Google</a>
@@ -314,14 +385,23 @@
 		</section>
 		<section class="search-result">
 			<div class="result-header">
-				<img src="image/search-page/google.png" alt="">
+					<span class="result-icon-wrapper">
+				<img class="result-icon" src="image/search-page/google.png" alt="">
+					</span>
 
 				<div class="result-site">
 					<div class="site-name">About Google</div>
 					<div class="site-url">https://about.google</div>
 				</div>
 
-				<button class="result-menu">⋮</button>
+				<svg focusable="false"
+				     class="result-menu"
+				     aria-hidden="true"
+				     xmlns="http://www.w3.org/2000/svg"
+				     viewBox="0 0 24 24">
+					<path
+						d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+				</svg>
 			</div>
 
 			<a class="result-title" href="#">About Google: Our products, technology and company ...
@@ -333,7 +413,9 @@
 		</section>
 		<section class="search-result">
 			<div class="result-header">
-				<img src="image/search-page/google.png" alt="">
+					<span class="result-icon-wrapper">
+				<img class="result-icon" src="image/search-page/google.png" alt="">
+					</span>
 
 				<div class="result-site">
 					<div class="site-name">
@@ -342,7 +424,14 @@
 					<div class="site-url">36M+ followers</div>
 				</div>
 
-				<button class="result-menu">⋮</button>
+				<svg focusable="false"
+				     class="result-menu"
+				     aria-hidden="true"
+				     xmlns="http://www.w3.org/2000/svg"
+				     viewBox="0 0 24 24">
+					<path
+						d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+				</svg>
 			</div>
 
 			<a class="result-title" href="#">Google</a>
@@ -353,14 +442,23 @@
 		</section>
 		<section class="search-result">
 			<div class="result-header">
-				<img src="image/search-page/google.png" alt="">
+					<span class="result-icon-wrapper">
+				<img class="result-icon" src="image/search-page/google.png" alt="">
+					</span>
 
 				<div class="result-site">
 					<div class="site-name">blog.google</div>
 					<div class="site-url">https://blog.google</div>
 				</div>
 
-				<button class="result-menu">⋮</button>
+				<svg focusable="false"
+				     class="result-menu"
+				     aria-hidden="true"
+				     xmlns="http://www.w3.org/2000/svg"
+				     viewBox="0 0 24 24">
+					<path
+						d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+				</svg>
 			</div>
 
 			<a class="result-title" href="#">News from Google | Google Product and Technology News ...
