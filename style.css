@@ -343,6 +343,73 @@ li {
     font-size: 14px;
 }
 
+.people-saying__menu-icon,
+.people-saying__toggle-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.related-searches__title {
+    font-size: 20px;
+    color: #1f1f1f;
+    font-weight: 400;
+    margin-top: -10px;
+    padding: 15px 0;
+}
+
+.related-searches__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 15px;
+}
+
+.related-searches__item {
+    /*width: 315px;*/
+    height: 50px;
+    background-color: #f1f3f4;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.related-searches__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.related-searches__icon {
+    width: 20px;
+    height: 20px;
+    fill: #747878;
+}
+/* SECTION PEOPLE-SAYING*/
+.people-saying__header {
+    display: flex;
+    gap: 10px;
+    /*align-items: center;*/
+}
+
+.people-saying__title {
+    margin-right: auto;
+}
+
+.people-saying__menu, .people-saying__toggle {
+    border: 0;
+    background: transparent;
+    fill: #545d7e;
+}
+
+.people-saying__menu:hover,
+.people-saying__toggle:hover {
+    width: 36px;
+    height: 36px;
+    background-color: #f1f3f4;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
 .knowledge-panel {
     width: 400px;
 }

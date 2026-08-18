@@ -196,7 +196,8 @@
 				<div class="sitelink__wrapper">
 					<a class="sitelink" href="">
 						<span class="sitelink-title">Google Fonts</span>
-						<span class="sitelink-description">Loading. Sign in. Use your Google Account. Email or phone. Forgot ...</span>
+						<span
+							class="sitelink-description">Loading. Sign in. Use your Google Account. Email or phone. Forgot ...</span>
 					</a>
 					<svg class="sitelink__icon"
 					     focusable="false"
@@ -209,7 +210,8 @@
 				<div class="sitelink__wrapper">
 					<a class="sitelink" href="">
 						<span class="sitelink-title">Page Ruler</span>
-						<span class="sitelink-description">Sign in to your Google Account and learn how to set up security ...</span>
+						<span
+							class="sitelink-description">Sign in to your Google Account and learn how to set up security ...</span>
 					</a>
 					<svg class="sitelink__icon"
 					     focusable="false"
@@ -248,7 +250,8 @@
 				<div class="sitelink__wrapper">
 					<a class="sitelink" href="">
 						<span class="sitelink-title">Search</span>
-						<span class="sitelink-description">Gmail is email that's intuitive, efficient, and useful. 15 GB of ...</span>
+						<span
+							class="sitelink-description">Gmail is email that's intuitive, efficient, and useful. 15 GB of ...</span>
 					</a>
 					<svg class="sitelink__icon"
 					     focusable="false"
@@ -265,8 +268,33 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="people-saying">
-			<h2 class="people-saying__title">What people are saying</h2>
+			<div class="people-saying__header">
+				<h2 class="people-saying__title">What people are saying</h2>
+				<button class="people-saying__menu" type="button">
+					<svg focusable="false"
+					     class="people-saying__menu-icon"
+					     aria-hidden="true"
+					     xmlns="http://www.w3.org/2000/svg"
+					     viewBox="0 0 24 24">
+						<path
+							d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+					</svg>
+				</button>
+
+				<button class="people-saying__toggle" type="button">
+					<svg aria-hidden="true"
+					     class="people-saying__toggle-icon"
+					     focusable="false"
+					     viewBox="0 0 24 24"
+					     xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+					</svg>
+				</button>
+
+			</div>
+
 
 			<div class="people-saying__subtitle">
 				Trending posts and discussions
@@ -331,6 +359,7 @@
 				</article>
 			</div>
 		</section>
+
 		<section class="search-result">
 			<div class="result-header">
 					<span class="result-icon-wrapper">
@@ -474,13 +503,20 @@
 				People also search for
 			</h2>
 
+
 			<ul class="related-searches__list">
 				<li class="related-searches__item">
 					<a class="related-searches__link" href="">
 						<span class="related-searches__text">
 								Www Google com search
 						</span>
-						<span class="related-searches__icon">⌕</span>
+						<svg class="related-searches__icon"
+						     focusable="false" aria-hidden="true"
+						     xmlns="http://www.w3.org/2000/svg"
+						     viewBox="0 0 24 24">
+							<path
+								d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+						</svg>
 					</a>
 				</li>
 				<li class="related-searches__item">
@@ -488,7 +524,13 @@
 						<span class="related-searches__text">
 								Www Google com search
 						</span>
-						<span class="related-searches__icon">⌕</span>
+						<svg class="related-searches__icon"
+						     focusable="false" aria-hidden="true"
+						     xmlns="http://www.w3.org/2000/svg"
+						     viewBox="0 0 24 24">
+							<path
+								d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+						</svg>
 					</a>
 				</li>
 				<li class="related-searches__item">
@@ -496,8 +538,13 @@
                 <span class="related-searches__text">
                     Www Google com my search
                 </span>
-
-						<span class="related-searches__icon">⌕</span>
+						<svg class="related-searches__icon"
+						     focusable="false" aria-hidden="true"
+						     xmlns="http://www.w3.org/2000/svg"
+						     viewBox="0 0 24 24">
+							<path
+								d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+						</svg>
 					</a>
 				</li>
 				<li class="related-searches__item">
@@ -505,7 +552,13 @@
                 <span class="related-searches__text">
                     Google search image
                 </span>
-						<span class="related-searches__icon">⌕</span>
+						<svg class="related-searches__icon"
+						     focusable="false" aria-hidden="true"
+						     xmlns="http://www.w3.org/2000/svg"
+						     viewBox="0 0 24 24">
+							<path
+								d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+						</svg>
 					</a>
 				</li>
 				<li class="related-searches__item">
@@ -514,7 +567,13 @@
                     Www Google com my search
                 </span>
 
-						<span class="related-searches__icon">⌕</span>
+						<svg class="related-searches__icon"
+						     focusable="false" aria-hidden="true"
+						     xmlns="http://www.w3.org/2000/svg"
+						     viewBox="0 0 24 24">
+							<path
+								d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+						</svg>
 					</a>
 				</li>
 
@@ -523,8 +582,13 @@
                 <span class="related-searches__text">
                     Google search image
                 </span>
-
-						<span class="related-searches__icon">⌕</span>
+						<svg class="related-searches__icon"
+						     focusable="false" aria-hidden="true"
+						     xmlns="http://www.w3.org/2000/svg"
+						     viewBox="0 0 24 24">
+							<path
+								d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+						</svg>
 					</a>
 				</li>
 				<li class="related-searches__item">
@@ -532,8 +596,13 @@
                 <span class="related-searches__text">
                     Www Google com my search
                 </span>
-
-						<span class="related-searches__icon">⌕</span>
+						<svg class="related-searches__icon"
+						     focusable="false" aria-hidden="true"
+						     xmlns="http://www.w3.org/2000/svg"
+						     viewBox="0 0 24 24">
+							<path
+								d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+						</svg>
 					</a>
 				</li>
 
