@@ -290,6 +290,10 @@ li {
     fill: #9E9E9E;
 }
 
+.search-result {
+    width: 660px;
+}
+
 .result-title {
     display: inline-block;
     font-size: 22px;
@@ -343,12 +347,6 @@ li {
     font-size: 14px;
 }
 
-.people-saying__menu-icon,
-.people-saying__toggle-icon {
-    width: 20px;
-    height: 20px;
-}
-
 .related-searches__title {
     font-size: 20px;
     color: #1f1f1f;
@@ -384,35 +382,330 @@ li {
     height: 20px;
     fill: #747878;
 }
+
 /* SECTION PEOPLE-SAYING*/
+.people-saying {
+    width: 660px;
+    margin-bottom: 30px;
+}
+
+.people-saying__menu-icon,
+.people-saying__toggle-icon {
+    width: 20px;
+    height: 20px;
+}
+
 .people-saying__header {
     display: flex;
     gap: 10px;
-    /*align-items: center;*/
 }
 
 .people-saying__title {
     margin-right: auto;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1f1f1f;
 }
 
-.people-saying__menu, .people-saying__toggle {
+.people-saying__menu {
+    width: 36px;
+    height: 36px;
     border: 0;
     background: transparent;
     fill: #545d7e;
+    background-color: none;
+    border-radius: 50%;
 }
+
+.people-saying__toggle {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: transparent;
+    fill: #545d7e;
+    background-color: #f1f3f4;
+    border-radius: 50%;
+}
+
 
 .people-saying__menu:hover,
 .people-saying__toggle:hover {
     width: 36px;
     height: 36px;
-    background-color: #f1f3f4;
+    background-color: #d1d1d1;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+.people-saying__source {
+    display: flex;
+    gap: 4px;
+}
+
+.people-saying__source-icons {
+    display: flex;
+    padding-bottom: 12px;
+}
+
+.people-saying__source-icon {
+    width: 16px;
+    height: 16px;
+    outline: 2px solid #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.people-saying__source-icon + .people-saying__source-icon {
+    margin-left: -4px;
+}
+
+.people-saying__source-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #636363;
+}
+
+/*PEOPLE-SAYING-CARDS*/
+.people-saying__cards {
+    display: flex;
+    gap: 20px;
+}
+
+.people-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 335px;
+    width: 204px;
+    background-color: #F3F5F6;
+    border-radius: 16px;
+    color: #bfbfbf;
+}
+
+.people-card__image {
+    width: 204px;
+    height: 187px;
+    border-radius: 16px;
+}
+
+.people-card__content,
+.people-card__meta,
+.people-card__wrapper {
+    padding: 4px 12px 6px 12px;
+}
+
+.people-card__title {
+    font-style: 14px;
+}
+
+.people-card__wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 20px;
+}
+
+.people-card__meta {
+    font-size: 12px;
+}
+
+.people-card__menu {
+    margin-left: auto;
+}
+
+.people-card__icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.people-card__source {
+    display: flex;
+    flex-direction: column;
+}
+
+.people-card__author {
+    font-size: 12px;
+}
+
+.people-card__platform {
+    font-size: 11px;
 }
 
 .knowledge-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     width: 400px;
 }
 
+.knowledge-panel__info {
+    padding-bottom: 20px;
+}
 
+.knowledge-panel__title {
+    font-size: 28px;
+    color: #1f1f1f;
+    font-weight: 500;
+}
+
+.knowledge-panel__menu {
+    width: 16px;
+    height: 16px;
+    fill: #1f1f1f;
+}
+
+.knowledge-panel__subtitle {
+    display: inline;
+    font-size: 14px;
+}
+
+.knowledge-panel__gallery {
+    display: grid;
+    grid-template-columns: 210px 160px;
+    grid-template-rows: 120px 120px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.knowledge-panel__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-first {
+    grid-row: span 2;
+}
+
+.knowledge-panel__description {
+    width: 360px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+
+.knowledge-panel__source {
+    padding-top: 20px;
+    padding-bottom: 12px;
+    font-size: 14px;
+
+}
+
+.knowledge-panel__source a {
+    color: #1a0dab;
+}
+
+.knowledge-panel__source a:hover {
+    text-decoration: underline;
+}
+
+.knowledge-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 12px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.knowledge-stats__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    background-color: #F3F5F6;
+    height: 70px;
+    padding: 12px;
+}
+
+.knowledge-stats__value a {
+    text-decoration: underline dotted;
+}
+
+.knowledge-panel__profiles {
+    margin-top: 20px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 24px 0;
+
+}
+
+.knowledge-panel__profiles-title {
+    font-size: 18px;
+    color: #1f1f1f;
+    font-weight: 400;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.knowledge-panel__profiles-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.knowledge-panel__profiles-item {
+    width: 76px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.knowledge-panel__profiles-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+
+.knowledge-panel__profiles-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.knowledge-panel__profiles-name {
+    font-size: 14px;
+    color: #545d7e;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.knowledge-panel__related-searches-title {
+    padding-top: 24px;
+    font-size: 18px;
+    font-size: 18px;
+    color: #1f1f1f;
+    font-weight: 400;
+}
+
+.knowledge-panel__related-searches-list {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.knowledge-panel__related-searches-item {
+    width: 84px;
+}
+
+.knowledge-panel__related-searches-link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.knowledge-panel__related-searches-link span:hover {
+    text-decoration: underline;
+}
+
+.knowledge-panel__related-searches-img {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    background-color: #f1f3f4;
+    border-radius: 8px;
+}
 

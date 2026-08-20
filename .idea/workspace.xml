@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5e745fd-1749-447e-8a73-06860765dcf7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/say-people" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/knowlengde-panel/menu.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/say-people" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +83,7 @@
       <workItem from="1786633245150" duration="14008000" />
       <workItem from="1786724071393" duration="1303000" />
       <workItem from="1786729194690" duration="1351000" />
-      <workItem from="1786860687514" duration="23524000" />
+      <workItem from="1786860687514" duration="53387000" />
     </task>
     <servers />
   </component>
